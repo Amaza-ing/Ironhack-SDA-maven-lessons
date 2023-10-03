@@ -56,6 +56,16 @@ public class Main {
 
 
         System.out.println("The program has reached this line");
+
+
+//        EQUALS, HASH & TO-STRING
+
+        Book book1 = new Book(1234, "Harry Potter", "J.K. Rowling", 1997);
+        Book book2 = new Book(5678, "Harry Potter", "J.K. Rowling", 1997);
+
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println("book1 == book2: " + book1.equals(book2));
     }
 
     public static void readFile(String fileName) {
