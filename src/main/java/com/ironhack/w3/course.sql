@@ -52,7 +52,7 @@ SELECT * FROM course WHERE course LIKE '%p%';
 
 SELECT classroom FROM course;
 SELECT COUNT(classroom) AS classrooms FROM course;
-SELECT DISTINCT COUNT(classroom) AS different_classrooms FROM course;
+SELECT COUNT(DISTINCT classroom) AS different_classrooms FROM course;
 
 SELECT SUM(hours) AS total_hours FROM course;
 SELECT SUM(hours) AS total_hours FROM course WHERE teacher_id = 1;
